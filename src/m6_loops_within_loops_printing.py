@@ -6,8 +6,8 @@ This problem provides practice at:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Billy Davignon.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # Students:
@@ -75,6 +75,18 @@ def shape(r):
     Preconditions:  r is a positive number.
     For purposes of "lining up", assume r is a single digit.
     """
+    for k in range(r):
+        for j in range(k):
+            print(' ', end='')
+        for i in range(r - k):
+            print('+', end='')
+        for m in range(1):
+            print('!', end='')
+        for n in range((r - k) -1, -1, -1):
+            print(n + 1, end='')
+        for p in range(k):
+            print('-', end='')
+        print()
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Some tests are already written for you (above).
